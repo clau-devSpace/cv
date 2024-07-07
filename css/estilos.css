@@ -1,0 +1,448 @@
+  
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Silkscreen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+
+
+      
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+
+body {
+    color: #210062;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    background-image: url("../imagenes/marissa-grootes-YwPNWDNZHkg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    
+           
+}
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+   
+}
+
+.menu-item{
+    font-size: 20px;
+    line-height: 60px;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #210062;
+}
+
+
+.abrir-menu, .cerrar-menu{
+   
+    background-color: #003049;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    display: none;
+    
+}
+
+.principal{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduccion{
+   
+    padding-top: 60px;
+}
+
+
+.presentacion p{
+  color: #77037B;
+  font-size: 65px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  line-height: 1;
+   
+}
+
+
+
+
+h1, h2{
+    color: #009FBD;
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-size: 65px;
+    display: inline-block;
+    
+    
+}
+
+h1{
+    padding-top: 60px;
+    padding-bottom: 35px;
+
+}
+
+
+
+
+.imagen img{
+    width: 180px;
+    height: auto;
+    border-radius: 130px;
+    margin-top: 35px;
+    
+}
+
+
+
+.iconos{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.fa-brands{
+    font-size: 60px;
+    padding: 20px;
+    
+}
+
+.portfolio2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sobre-mi{
+    display: inline-block;
+    width: 800px;
+    margin-top: 100px;
+    vertical-align: top;
+    font-size: 20px;
+    
+}
+
+.listas{
+    font-weight: 400;
+    list-style-type: none;
+
+}
+
+.perfil{
+    font-weight: 300;
+}
+
+.listas, .perfil{
+    line-height: 1.7;
+}
+
+.curriculum{
+    margin-block-start: 90px;
+  
+
+}
+
+.curriculum p{
+    font-weight: 300;
+}
+
+.contacto2{
+    margin-block-end: 90px;
+}
+
+
+h2{
+   
+    padding-top: 100px;
+         
+}
+
+h4{
+    color: #009FBD;
+    font-weight: 500;
+}
+
+h3{
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+}
+
+.icono{
+    color: #F9E2AF;
+    font-size: 50px;
+    padding: 7px 14px;
+    border-radius: 50%;
+    background-color:  #77037B;
+}
+
+.icono2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCD77F;
+}
+
+.proyectos{
+    margin: 20px;
+    background-color: #210062;
+    width: 252px;
+    height: 224px;
+    border: 2px solid #210062;
+    border-radius: 5px;
+
+
+}
+
+.proyectos img{
+    width: 248px;
+    height: 124px;
+    
+}
+
+.proyectos p{
+    font-size: 11px;
+    color: #FCD77F;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 500px){
+
+    /*.nav{
+    display: none;
+   } */
+   
+   .abrir-menu{
+    display: block;
+    margin-right: 15px;
+    }
+
+   .cerrar-menu{
+    display: block;
+    padding-bottom: 12px;
+    cursor: pointer;
+    
+
+   }
+
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #003049;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
+       
+        
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+ 
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+   
+    .sobre-mi{
+        width: 280px;
+        margin-top: 300px;
+    }
+
+    .principal{
+        overflow: hidden;
+    }
+
+
+    .introduccion{
+    
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 100vh;
+       
+        
+    }
+
+    .presentacion{
+        width: 50%;
+        
+    }
+
+
+    .presentacion p{
+        color: #77037B;
+        font-size: 40px;
+
+    }
+
+
+    h1, h2{
+        
+        font-size: 40px;
+        
+       
+        
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+
+    .listas{
+        font-size: 20px;
+    }
+
+    .perfil{
+        font-size: 20px;
+    }
+
+    .proyectos img{
+        width: 95px;
+        height: 40px;
+        
+    }
+
+    .imagen img{
+        width: 150px;
+        height: auto;  
+        
+    }
+
+    .proyectos{
+        margin: 20px;
+        width: 100px;
+        height: 90px;
+    
+    
+    }
+
+    .proyectos p{
+        font-size: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    .icono2{
+        font-size: 7px;
+    }
+
+
+   
+    .fa-brands{
+    font-size: 45px;
+               
+    }
+
+
+    .ultimo{
+        margin-bottom: 80px;
+    }
+
+    .menu-item{
+        color:#fff;
+    }
+
+    .sobre-mi{
+        width: 400px;
+        margin-top: 20px; 
+        font-size: 20px;
+        
+    }                   
+     
+        
+}
+
+@media screen and (max-width: 800px){
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #003049;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
+       
+        
+    }
+
+}
+
+
+
+
+
+
+
+
