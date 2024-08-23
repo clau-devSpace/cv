@@ -1,34 +1,20 @@
-  
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Silkscreen:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
       
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    background-color: #EBF4F6;
     
 }
 
 
 body {
-    color: #210062;
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    background-image: url("../imagenes/marissa-grootes-YwPNWDNZHkg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: padding-box;
-    
-           
+    color: #071952;
+    font-family: "Nunito", serif;
+          
 }
 
 
@@ -45,7 +31,7 @@ body {
 .nav-menu{
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 8px;
    
 }
 
@@ -54,14 +40,18 @@ body {
     line-height: 60px;
     border-radius: 8px;
     padding: 8px 10px;
-    font-family: "PT Serif", serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 700;
     
 }
 
 .nav-link{
     text-decoration: none;
-    color: #210062;
+    color: #071952;
+}
+
+.nav-link:hover{
+    color: #071952;
 }
 
 
@@ -76,6 +66,8 @@ body {
 }
 
 .principal{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -83,46 +75,34 @@ body {
 
 .introduccion{
    
-    padding-top: 60px;
+    padding-top: 70px;
+
 }
 
 
 .presentacion p{
-  color: #77037B;
-  font-size: 65px;
-  font-family: "Caveat", cursive;
-  font-weight: 700;
+  color: #071952;
+  font-size: 50px;
+  font-weight: 800;
   line-height: 1;
    
 }
 
 
 
-
 h1, h2{
     color: #009FBD;
-    font-family: "Caveat", cursive;
     font-weight: 600;
-    font-size: 65px;
-    display: inline-block;
+    font-size: 40px;
     
     
 }
 
-h1{
-    padding-top: 60px;
-    padding-bottom: 35px;
 
-}
-
-
-
-
-.imagen img{
-    width: 180px;
-    height: auto;
-    border-radius: 130px;
-    margin-top: 35px;
+.arrow{
+    font-size: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
     
 }
 
@@ -141,12 +121,6 @@ h1{
     
 }
 
-.portfolio2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 
 .sobre-mi{
@@ -164,16 +138,25 @@ h1{
 
 }
 
-.perfil{
+.perfil p{
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    display: inline-block;
     font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 30px;
+    
 }
+
 
 .listas, .perfil{
     line-height: 1.7;
 }
 
 .curriculum{
-    margin-block-start: 90px;
+    margin-block-start: 75px;
   
 
 }
@@ -190,56 +173,51 @@ h1{
 h2{
    
     padding-top: 100px;
+    text-decoration: underline;
          
 }
 
 h4{
     color: #009FBD;
     font-weight: 500;
+    font-size: 23px;
 }
 
 h3{
-    font-family: "PT Serif", serif;
     font-weight: 700;
+    font-size: 25px;
 }
 
 .icono{
-    color: #F9E2AF;
+    color: #77037B;
     font-size: 50px;
     padding: 7px 14px;
-    border-radius: 50%;
-    background-color:  #77037B;
+   
 }
 
 .icono2{
     font-size: 20px;
     font-weight: bold;
-    color: #FCD77F;
+    
 }
 
 .proyectos{
-    margin: 20px;
-    background-color: #210062;
-    width: 252px;
-    height: 224px;
-    border: 2px solid #210062;
-    border-radius: 5px;
-
-
+    margin-block-start: 75px;
 }
 
 .proyectos img{
-    width: 248px;
-    height: 124px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
     
 }
 
 .proyectos p{
-    font-size: 11px;
-    color: #FCD77F;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 20px;
+    color: #210062;
+    vertical-align: top;
+    font-weight: 400;
+    
 }
 
 .hidden{
@@ -265,12 +243,15 @@ h3{
    .abrir-menu{
     display: block;
     margin-right: 15px;
+    color: #071952;
+    cursor: pointer;
     }
 
    .cerrar-menu{
     display: block;
     padding-bottom: 12px;
     cursor: pointer;
+    color: #fff;
     
 
    }
@@ -291,8 +272,17 @@ h3{
         padding: 2rem;
         box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
        
-        
     }
+
+    .nav-link{
+        color: #fff;
+       
+    }
+
+    .nav-link:hover{
+        color: #cc93f5;
+    }
+
 
     .nav.visible{
         opacity: 1;
@@ -306,98 +296,73 @@ h3{
 
     }
 
+    .menu-item, .nav-menu, .nav-link, .cerrar-menu, .bi-x{
+        background-color: #003049;
+    }
+
    
     .sobre-mi{
-        width: 280px;
-        margin-top: 300px;
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+    
     }
 
     .principal{
         overflow: hidden;
-    }
-
-
-    .introduccion{
-    
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        height: 100vh;
-       
-        
-    }
-
-    .presentacion{
-        width: 50%;
         
     }
 
 
     .presentacion p{
-        color: #77037B;
-        font-size: 40px;
+        font-size: 25px;
+        width: 250px;
 
+    }
+
+    .perfil p{
+      width: 250px;
+      font-size: 18px;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+        
     }
 
 
     h1, h2{
+        font-size: 25px;
         
-        font-size: 40px;
-        
-       
+    }
+
+    
+    .proyectos img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
         
     }
     
-    h3{
-        font-size: 20px;
+    .proyectos p{
+        font-size: 18px;
+        width: 200px;
+        display: inline-block;
+        
+    }
+
+    .proyectos, .curriculum{
+        margin-block-start: 20px;
+    }
+    
+    h3,h4{
+        font-size: 18px;
     }
 
     .listas{
-        font-size: 20px;
+        font-size: 18px;
+        display: inline-block;
+        width: 200px;
     }
-
-    .perfil{
-        font-size: 20px;
-    }
-
-    .proyectos img{
-        width: 95px;
-        height: 40px;
-        
-    }
-
-    .imagen img{
-        width: 150px;
-        height: auto;  
-        
-    }
-
-    .proyectos{
-        margin: 20px;
-        width: 100px;
-        height: 90px;
-    
-    
-    }
-
-    .proyectos p{
-        font-size: 5px;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
-    
-    .icono2{
-        font-size: 7px;
-    }
-
-
-   
-    .fa-brands{
-    font-size: 45px;
-               
-    }
-
 
     .ultimo{
         margin-bottom: 80px;
@@ -405,14 +370,7 @@ h3{
 
     .menu-item{
         color:#fff;
-    }
-
-    .sobre-mi{
-        width: 400px;
-        margin-top: 20px; 
-        font-size: 20px;
-        
-    }                   
+    }            
      
         
 }
