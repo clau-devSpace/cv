@@ -98,6 +98,11 @@ body {
    
 }
 
+.perfil p{
+    max-width: 800px;
+    margin-inline: auto;
+}
+
 
 
 h1, h2{
@@ -137,7 +142,6 @@ h1, h2{
     display: inline-block;
     width: 800px;
     margin-top: 100px;
-    vertical-align: top;
     font-size: 20px;
     
 }
@@ -208,11 +212,11 @@ h3{
 }
 
 .proyectos{
-    margin-block-start: 75px;
+    margin-block-start: 90px;
 }
 
 .proyectos img{
-    width: 400px;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
     
@@ -221,7 +225,6 @@ h3{
 .proyectos p{
     font-size: 20px;
     color: #210062;
-    vertical-align: top;
     font-weight: 400;
     
 }
@@ -258,8 +261,6 @@ h3{
     padding-bottom: 12px;
     cursor: pointer;
     color: #fff;
-    
-
    }
 
 
@@ -278,6 +279,117 @@ h3{
         padding: 2rem;
         box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
        
+    }
+
+    .nav-link{
+        color: #fff;
+       
+    }
+
+    .nav-link:hover{
+        color: #cc93f5;
+    }
+
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+ 
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu-item, .nav-menu, .nav-link, .cerrar-menu, .bi-x{
+        background-color: #003049;
+    }
+
+   
+    .sobre-mi{
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+    }
+
+
+    .presentacion p{
+        font-size: 30px;
+        max-width: 500px;
+    }
+
+    .perfil p{
+      width: 250px;
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .perfil{
+        font-size: 20px;
+    }
+
+    .proyectos, .curriculum{
+        margin-block-start: 20px;
+    }
+
+    .proyectos img{
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+    .listas{
+        margin-inline: inline;
+        max-width: 500px;
+    }
+
+    .ultimo{
+        margin-bottom: 80px;
+    }
+
+    .menu-item{
+        color:#fff;
+    }            
+     
+        
+}
+
+@media screen and (max-width: 800px){
+
+    .abrir-menu{
+        display: block;
+        margin-right: 15px;
+        color: #071952;
+        cursor: pointer;
+        }
+    
+       .cerrar-menu{
+        display: block;
+        padding-bottom: 12px;
+        cursor: pointer;
+        color: #fff;
+    
+       }
+    
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #003049;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
+       
+        
     }
 
     .nav-link{
@@ -321,14 +433,14 @@ h3{
 
 
     .presentacion p{
-        font-size: 25px;
+        font-size: 30px;
         width: 250px;
 
     }
 
     .perfil p{
       width: 250px;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
       margin: 0;
       overflow: hidden;
@@ -338,7 +450,7 @@ h3{
 
     h1, h2{
         
-        font-size: 40px;
+        font-size: 28px;
         
        
         
@@ -350,17 +462,6 @@ h3{
 
     .listas{
         font-size: 20px;
-    }
-
-    .perfil{
-        font-size: 20px;
-    }
-
-    .proyectos img{
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-        
     }
     
     .proyectos p{
@@ -392,28 +493,6 @@ h3{
         color:#fff;
     }            
      
-        
-}
-
-@media screen and (max-width: 800px){
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #003049;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax(0, 0, 0, .5);
-       
-        
-    }
 
 }
 
